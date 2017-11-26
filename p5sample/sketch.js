@@ -2,8 +2,8 @@ function setup() {
   createCanvas(windowWidth,windowHeight);
 }
 
-int x=0;
-int xDir=1;
+var x=0;
+var xDir=1;
 
 function draw() {
   ellipse(x,50,80,80);
