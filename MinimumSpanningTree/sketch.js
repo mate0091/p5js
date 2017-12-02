@@ -8,15 +8,17 @@ function vert(x,y){
 function setup() {
   createCanvas(windowWidth,windowHeight);
   frameRate(60);
-  generateVertices(50);
+  // generateVertices(50);
 }
 
 function generateVertices(amount){
-  vertices = [];
-  for (let i = 0; i < amount; i++){
-    let temp = new vert(random(100, width - 100), random(100, height - 100));
-    vertices.push(temp);
-  }
+  // vertices = [];
+  // for (let i = 0; i < amount; i++){
+  //   let temp = new vert(random(100, width - 100), random(100, height - 100));
+  //   vertices.push(temp);
+  // }
+  let temp = new vert(mouseX, mouseY);
+  vertices.push(temp);
 }
 
 function mousePressed(){
